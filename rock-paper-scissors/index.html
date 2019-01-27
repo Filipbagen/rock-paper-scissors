@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+</head>
+<body onload="init()">
+    <h1>Rock, Paper, Scissors</h1>
+    <h3 id="player"></h3>
+
+    <div class="symbols">
+        <i class="far fa-hand-rock fa-4x"></i>
+        <i class="far fa-hand-paper fa-4x"></i>
+        <i class="far fa-hand-scissors fa-4x"></i>
+    </div>
+
+    <h3 id="results"></h3>
+
+    <div class="inputname">
+        <form onkeypress="return event.keyCode != 13">
+            <input id="playeronename" autocapitalize="off" autocomplete="off" spellcheck="false" autocorrect="off" type="text"
+            placeholder="Player one's name" autofocus>
+        </form>
+
+        <form onkeypress="return event.keyCode != 13">
+            <input id="playertwoname" autocapitalize="off" autocomplete="off" spellcheck="false" autocorrect="off" type="text"
+            placeholder="Player two's name">
+        </form>
+    </div>
+
+    <button id="play" onclick="play()">Play</button>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
